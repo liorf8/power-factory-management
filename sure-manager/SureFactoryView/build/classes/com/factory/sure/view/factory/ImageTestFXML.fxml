@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane id="my-stack-pane" prefHeight="150.0" prefWidth="200.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="com.factory.sure.view.factory.ImageTestFXMLController">
+  <children>
+    <ImageView id="kopen_imageview" fitHeight="777.5004201811975" fitWidth="1250.1282958984375" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@SoDoMachDienNhaMay_KhoaMo.jpg" preserveRatio="false" smooth="false" />
+      </image>
+    </ImageView>
+    <Label id="line_u" prefWidth="101.0" text="Điện áp lưới">
+      <font>
+        <Font size="14.0" />
+      </font>
+    </Label>
+    <Label id="L_Uab_Label" alignment="CENTER_RIGHT" prefWidth="49.0" styleClass="label_normal" text="Uab" />
+    <Label id="L_Ubc_Label" prefWidth="49.0" styleClass="label_normal" text="Ubc" />
+    <Label id="L_Uca_Label" prefWidth="49.0" styleClass="label_normal" text="Uca" />
+    <Label fx:id="L_Uab_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="L_Ubc_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="L_Uca_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label id="G1_Uab_Label" prefWidth="48.9998779296875" styleClass="label_normal" text="Uab" />
+    <Label id="G1_Ubc_Label" prefWidth="49.0" styleClass="label_normal" text="Ubc" />
+    <Label id="G1_Uca_Label" prefWidth="49.0" styleClass="label_normal" text="Uca" />
+    <Label fx:id="G1_Uab_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G1_Ubc_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G1_Uca_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label id="G1_Ia_Label" prefWidth="49.0" styleClass="label_normal" text="Ia" />
+    <Label id="G1_Ib_Label" prefWidth="49.0" styleClass="label_normal" text="Ib" />
+    <Label id="G1_Ic_Label" prefWidth="49.0" styleClass="label_normal" text="Ic" />
+    <Label fx:id="G1_Ia_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G1_Ib_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G1_Ic_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label id="G2_Uab_Label" prefWidth="48.9998779296875" styleClass="label_normal" text="Uab" />
+    <Label id="G2_Ubc_Label" prefWidth="49.000099999997474" styleClass="label_normal" text="Ubc" />
+    <Label id="G2_Uca_Label" prefWidth="49.0" styleClass="label_normal" text="Uca" />
+    <Label fx:id="G2_Uab_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G2_Ubc_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G2_Uca_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label id="G2_Ia_Label" prefWidth="49.0" styleClass="label_normal" text="Ia" />
+    <Label id="G2_Ib_Label" prefWidth="49.0" styleClass="label_normal" text="Ib" />
+    <Label id="G2_Ic_Label" prefWidth="49.0" styleClass="label_normal" text="Ic" />
+    <Label fx:id="G2_Ia_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G2_Ib_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G2_Ic_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label id="G3_Uab_Label" prefWidth="48.9998779296875" styleClass="label_normal" text="Uab" />
+    <Label id="G3_Ubc_Label" prefWidth="49.000099999997474" styleClass="label_normal" text="Ubc" />
+    <Label id="G3_Uca_Label" prefWidth="49.0" styleClass="label_normal" text="Uca" />
+    <Label fx:id="G3_Uab_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G3_Ubc_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G3_Uca_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label id="G3_Ia_Label" prefWidth="49.0" styleClass="label_normal" text="Ia" />
+    <Label id="G3_Ib_Label" prefWidth="49.0" styleClass="label_normal" text="Ib" />
+    <Label id="G3_Ic_Label" prefWidth="49.0" styleClass="label_normal" text="Ic" />
+    <Label fx:id="G3_Ia_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G3_Ib_Label_Val" prefWidth="49.0" styleClass="label_val" />
+    <Label fx:id="G3_Ic_Label_Val" prefWidth="49.0" styleClass="label_val" />
+  </children>
+  <stylesheets>
+    <URL value="@imagetestfxml.css" />
+  </stylesheets>
+</StackPane>

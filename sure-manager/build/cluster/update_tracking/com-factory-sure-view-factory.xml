@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="com.factory.sure.view.factory">
+    <module_version install_time="1371288422189" last="true" origin="installer" specification_version="1.0">
+        <file crc="3746452018" name="config/Modules/com-factory-sure-view-factory.xml"/>
+        <file crc="2994064696" name="modules/com-factory-sure-view-factory.jar"/>
+    </module_version>
+</module>
