@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.factory.sure.comport
+OpenIDE-Module-Localizing-Bundle: com/factory/sure/comport/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
