@@ -59,9 +59,12 @@ public final class FactoryDiagramTopComponent extends TopComponent implements Lo
         setLayout(new BorderLayout());
         init();
 
-        // Comport Assistant
-        m_pComportAssistance = new ComportAssistance();
-        m_pComportAssistance.setComPort("COM5");
+        Collection<? extends ComportAssistance> allComportAssistances = Lookup.getDefault().lookupAll(ComportAssistance.class);
+        for (ComportAssistance comportAssistance : allComportAssistances) {
+            m_pComportAssistance = comportAssistance;
+            break;  // Only have one ComportAssistance Instance
+        }
+        m_pComportAssistance.setComPort("COM6");
         m_pComportAssistance.initializeUART();
         m_pComportAssistance.startUART();
     }
@@ -138,6 +141,7 @@ public final class FactoryDiagramTopComponent extends TopComponent implements Lo
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
+                System.out.println("Result changes");
                 for (GeneratorData generatorData : generatorDatas) {
                     m_pImageTestFXMLController.updateGUI(generatorData);
                 }

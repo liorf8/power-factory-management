@@ -5,7 +5,6 @@ import com.factory.sure.comport.data.Generator;
 import com.factory.sure.comport.data.SharedObject;
 import com.factory.sure.comport.helper.ModbusCRC;
 import com.factory.sure.comport.helper.constants.ModbusConstants;
-import java.util.Collections;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.locks.ReentrantLock;
@@ -13,7 +12,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import jssc.SerialPort;
 import jssc.SerialPortException;
-import org.openide.util.lookup.InstanceContent;
 
 public class UARTSendTimer {
 

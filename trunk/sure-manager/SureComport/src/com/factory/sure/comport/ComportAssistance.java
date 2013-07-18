@@ -14,16 +14,18 @@ import jssc.SerialPortException;
 import org.openide.util.Lookup;
 import org.openide.util.lookup.AbstractLookup;
 import org.openide.util.lookup.InstanceContent;
+import org.openide.util.lookup.ServiceProvider;
 
 /**
  *
  * @author MinhLuan Firstly set the comport. Secondly, initialize. Thirdly,
  * start the UART. At last, stop the UART.
  */
+@ServiceProvider(service = ComportAssistance.class)
 public class ComportAssistance implements Lookup.Provider {
     //The Com port number, represented as a String value
 
-    private String m_ComPort = "COM6";  // TODO: config the comport
+    private String m_ComPort = "COM5";  // TODO: config the comport
     //The Serial port to connect with the Master board.
     private SerialPort m_SerialPort;
     // The UART sending work. This will send data requests to the Master board
