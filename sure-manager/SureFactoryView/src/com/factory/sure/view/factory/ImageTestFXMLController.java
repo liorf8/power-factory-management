@@ -4,7 +4,6 @@
  */
 package com.factory.sure.view.factory;
 
-import com.factory.sure.comport.data.Generator;
 import com.factory.sure.comport.data.GeneratorData;
 import com.factory.sure.comport.helper.constants.ModbusConstants;
 import java.net.URL;

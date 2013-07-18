@@ -17,15 +17,15 @@ public class ModbusConstants {
     /**
      * The Modbus address of the Master board.
      */
-    public static final byte GENERATOR_1_MODBUS_ADDRESS = 0x10;    //The modbus address of the board
+    public static final byte GENERATOR_1_MODBUS_ADDRESS = 0x12;    //The modbus address of the board
     /**
      * The Modbus address of the Master board.
      */
-    public static final byte GENERATOR_2_MODBUS_ADDRESS = 0x11;    //The modbus address of the board
+    public static final byte GENERATOR_2_MODBUS_ADDRESS = 0x13;    //The modbus address of the board
     /**
      * The Modbus address of the Master board.
      */
-    public static final byte GENERATOR_3_MODBUS_ADDRESS = 0x12;    //The modbus address of the board
+    public static final byte GENERATOR_3_MODBUS_ADDRESS = 0x14;    //The modbus address of the board
     /**
      * Cycle time: time required to get all of the information from a Master
      * board
