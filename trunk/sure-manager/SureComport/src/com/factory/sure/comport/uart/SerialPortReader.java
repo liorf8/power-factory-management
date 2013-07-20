@@ -8,11 +8,16 @@ import com.factory.sure.data.pojos.GeneratorData;
 import com.factory.sure.comport.data.SharedObject;
 import com.factory.sure.comport.helper.ModbusCRC;
 import com.factory.sure.comport.helper.constants.ModbusConstants;
+import com.factory.sure.data.FactoryDataAssistance;
 import com.factory.sure.data.configuration.Configuration;
+import com.factory.sure.data.exception.WrongGeneratorException;
+import com.factory.sure.data.pojos.Factory;
 import com.factory.sure.data.pojos.Generator;
 import java.util.Collections;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.locks.ReentrantLock;
@@ -42,8 +47,7 @@ public class SerialPortReader implements SerialPortEventListener {
 
         if (Configuration.DEBUG_MODE == true) {
             Timer fakeDataTimer = new Timer();
-//            fakeDataTimer.schedule(new FakeGeneratorDataTask(), 2000, );
-            fakeDataTimer.schedule(new FakeGeneratorDataTask(), 0, 2000);
+            fakeDataTimer.schedule(new FakeGeneratorDataTask(), 0, 500);
         }
 
     }
@@ -301,21 +305,22 @@ public class SerialPortReader implements SerialPortEventListener {
     }
 
     private class FakeGeneratorDataTask extends TimerTask {
-
-        private Generator fakeGenerator1;
-        private Generator fakeGenerator2;
-        private Generator fakeGenerator3;
         List<Generator> m_pGeneratorList;
         private int tmpCounter = 0;
 
         public FakeGeneratorDataTask() {
             m_pGeneratorList = new LinkedList<Generator>();
-            fakeGenerator1 = new Generator((byte) ModbusConstants.GENERATOR_1_MODBUS_ADDRESS);
-            fakeGenerator2 = new Generator((byte) ModbusConstants.GENERATOR_2_MODBUS_ADDRESS);
-            fakeGenerator3 = new Generator((byte) ModbusConstants.GENERATOR_3_MODBUS_ADDRESS);
-            m_pGeneratorList.add(fakeGenerator1);
-            m_pGeneratorList.add(fakeGenerator2);
-            m_pGeneratorList.add(fakeGenerator3);
+
+            Set<Byte> modbusSet = new LinkedHashSet<Byte>(ModbusConstants.NUM_OF_GENERATORS);
+            modbusSet.add(Byte.valueOf(ModbusConstants.GENERATOR_1_MODBUS_ADDRESS));
+            modbusSet.add(Byte.valueOf(ModbusConstants.GENERATOR_2_MODBUS_ADDRESS));
+            modbusSet.add(Byte.valueOf(ModbusConstants.GENERATOR_3_MODBUS_ADDRESS));
+            FactoryDataAssistance factoryDataAssistance = new FactoryDataAssistance();
+            try {
+                Factory factory = factoryDataAssistance.initializeFactoryData(modbusSet);
+                m_pGeneratorList = factory.getGenerators();
+            } catch (WrongGeneratorException exception) {
+            }
         }
 
         @Override
@@ -325,8 +330,8 @@ public class SerialPortReader implements SerialPortEventListener {
             GeneratorData tmpGeneratorData = new GeneratorData(m_pGeneratorList.get(tmpCounter));
             tmpGeneratorData.setRandomValues();
             m_pInstanceContent.add(tmpGeneratorData);
-            
-            tmpCounter ++;
+
+            tmpCounter++;
             if (tmpCounter >= ModbusConstants.NUM_OF_GENERATORS) {
                 tmpCounter = 0;
             }

@@ -53,12 +53,10 @@ public final class FactoryDiagramTopComponent extends TopComponent implements Lo
     private FactoryDataAssistance m_pFactoryDataAssistance = null;
     private Lookup.Result<GeneratorData> m_pLookupResult;
     private ImageTestFXMLController m_pImageTestFXMLController;
-    
     // The timestamp to choose whether to store a GeneratorData to database
     private long databaseTimeStamp = 0;
-    
-    // Database update interval in milliseconds
 
+    // Database update interval in milliseconds
     public FactoryDiagramTopComponent() {
         initComponents();
         setName(Bundle.CTL_FactoryDiagramTopComponent());
@@ -166,9 +164,9 @@ public final class FactoryDiagramTopComponent extends TopComponent implements Lo
         for (GeneratorData generatorData : generatorDatas) {
             changedGeneratorData = generatorData;
             break;
-        }       
-        
-        if (changedGeneratorData != null) {            
+        }
+
+        if (changedGeneratorData != null) {
             // Update the view if available
             final GeneratorData g = changedGeneratorData;
             Platform.runLater(new Runnable() {
@@ -178,8 +176,8 @@ public final class FactoryDiagramTopComponent extends TopComponent implements Lo
                     m_pImageTestFXMLController.updateGUI(g);
                 }
             });
-            
-//            this.m_pFactoryDataAssistance.update(changedGeneratorData);
+
+            this.m_pFactoryDataAssistance.update(changedGeneratorData);
         }
     }
 }
