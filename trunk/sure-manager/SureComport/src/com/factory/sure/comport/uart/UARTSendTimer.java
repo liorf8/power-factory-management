@@ -1,10 +1,11 @@
 package com.factory.sure.comport.uart;
 
-import com.factory.sure.comport.data.Factory;
-import com.factory.sure.comport.data.Generator;
+import com.factory.sure.data.pojos.Factory;
+import com.factory.sure.data.pojos.Generator;
 import com.factory.sure.comport.data.SharedObject;
 import com.factory.sure.comport.helper.ModbusCRC;
 import com.factory.sure.comport.helper.constants.ModbusConstants;
+import com.factory.sure.data.pojos.GeneratorData;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.locks.ReentrantLock;
@@ -76,9 +77,8 @@ public class UARTSendTimer {
                         Generator currentGenerator = this.getCurrentGenerator();
                         if (comStatus == 1) {   // It means that the generator should be change to the next one
                             this.nextGeneratorIndex();
-
                             // Update new currentGenerator
-                            this.m_pSharedObject.setCurrentGeneratorData(currentGenerator.getNextGeneratorData());
+                            this.m_pSharedObject.setCurrentGeneratorData(new GeneratorData(currentGenerator));
                             System.out.println("Update new currentGenerator to " + currentGenerator.getModbusAddress());
                             // System.out.println("Change to the generator index: " + this.m_CurrentGeneratorIndex);
                         }

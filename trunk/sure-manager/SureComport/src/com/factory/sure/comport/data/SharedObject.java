@@ -4,6 +4,7 @@
  */
 package com.factory.sure.comport.data;
 
+import com.factory.sure.data.pojos.GeneratorData;
 import com.factory.sure.comport.helper.constants.ModbusConstants;
 import java.util.concurrent.locks.*;
 
@@ -64,14 +65,14 @@ public class SharedObject {
     }
 
     /**
-     * @return the m_pCurrentGeneratorData
+     * @return the currentGeneratorData
      */
     public GeneratorData getCurrentGeneratorData() {
         return m_pCurrentGeneratorData;
     }
 
     /**
-     * @param m_pCurrentGeneratorData the m_pCurrentGeneratorData to set
+     * @param currentGeneratorData the m_pCurrentGeneratorData to set
      */
     public void setCurrentGeneratorData(GeneratorData currentGeneratorData) {
         this.m_pCurrentGeneratorData = currentGeneratorData;

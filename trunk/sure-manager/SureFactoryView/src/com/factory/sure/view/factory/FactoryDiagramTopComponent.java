@@ -5,7 +5,8 @@
 package com.factory.sure.view.factory;
 
 import com.factory.sure.comport.ComportAssistance;
-import com.factory.sure.comport.data.GeneratorData;
+import com.factory.sure.data.pojos.GeneratorData;
+import com.factory.sure.data.FactoryDataAssistance;
 import java.awt.BorderLayout;
 import java.io.IOException;
 import java.util.Collection;
@@ -48,9 +49,15 @@ import org.openide.util.NbBundle.Messages;
 public final class FactoryDiagramTopComponent extends TopComponent implements LookupListener {
 
     private static JFXPanel fxPanel;
-    private ComportAssistance m_pComportAssistance;
+    private ComportAssistance m_pComportAssistance = null;
+    private FactoryDataAssistance m_pFactoryDataAssistance = null;
     private Lookup.Result<GeneratorData> m_pLookupResult;
     private ImageTestFXMLController m_pImageTestFXMLController;
+    
+    // The timestamp to choose whether to store a GeneratorData to database
+    private long databaseTimeStamp = 0;
+    
+    // Database update interval in milliseconds
 
     public FactoryDiagramTopComponent() {
         initComponents();
@@ -64,9 +71,26 @@ public final class FactoryDiagramTopComponent extends TopComponent implements Lo
             m_pComportAssistance = comportAssistance;
             break;  // Only have one ComportAssistance Instance
         }
-        m_pComportAssistance.setComPort("COM6");
-        m_pComportAssistance.initializeUART();
-        m_pComportAssistance.startUART();
+        if (m_pComportAssistance != null) {
+            m_pComportAssistance.setComPort("COM6");
+            m_pComportAssistance.initializeUART();
+//            m_pComportAssistance.startUART();
+        } else {
+            System.err.println("FactoryDiagramTopComponent: Cannot find and instance of ComportAssistance");
+            System.exit(-1);
+        }
+
+        Collection<? extends FactoryDataAssistance> allFactoryDataAssistances = Lookup.getDefault().lookupAll(FactoryDataAssistance.class);
+        for (FactoryDataAssistance factoryDataAssistance : allFactoryDataAssistances) {
+            m_pFactoryDataAssistance = factoryDataAssistance;
+            break;
+        }
+        if (m_pFactoryDataAssistance != null) {
+            m_pFactoryDataAssistance.startDatabaseTimer();
+        } else {
+            System.err.println("FactoryDiagramTopComponent: Cannot find and instance of FactoryDataAssistance");
+            System.exit(-1);
+        }
     }
 
     /**
@@ -138,15 +162,24 @@ public final class FactoryDiagramTopComponent extends TopComponent implements Lo
     @Override
     public void resultChanged(LookupEvent le) {
         final Collection<? extends GeneratorData> generatorDatas = this.m_pLookupResult.allInstances();
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Result changes");
-                for (GeneratorData generatorData : generatorDatas) {
-                    m_pImageTestFXMLController.updateGUI(generatorData);
+        GeneratorData changedGeneratorData = null;
+        for (GeneratorData generatorData : generatorDatas) {
+            changedGeneratorData = generatorData;
+            break;
+        }       
+        
+        if (changedGeneratorData != null) {            
+            // Update the view if available
+            final GeneratorData g = changedGeneratorData;
+            Platform.runLater(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("Result changes");
+                    m_pImageTestFXMLController.updateGUI(g);
                 }
-            }
-        });
-
+            });
+            
+//            this.m_pFactoryDataAssistance.update(changedGeneratorData);
+        }
     }
 }

@@ -4,11 +4,17 @@
  */
 package com.factory.sure.comport.uart;
 
-import com.factory.sure.comport.data.GeneratorData;
+import com.factory.sure.data.pojos.GeneratorData;
 import com.factory.sure.comport.data.SharedObject;
 import com.factory.sure.comport.helper.ModbusCRC;
 import com.factory.sure.comport.helper.constants.ModbusConstants;
+import com.factory.sure.data.configuration.Configuration;
+import com.factory.sure.data.pojos.Generator;
 import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -33,6 +39,13 @@ public class SerialPortReader implements SerialPortEventListener {
         this.m_pSerialPort = serialPort;
         this.m_pSharedObject = sharedObject;
         this.m_pInstanceContent = instanceContent;
+
+        if (Configuration.DEBUG_MODE == true) {
+            Timer fakeDataTimer = new Timer();
+//            fakeDataTimer.schedule(new FakeGeneratorDataTask(), 2000, );
+            fakeDataTimer.schedule(new FakeGeneratorDataTask(), 0, 2000);
+        }
+
     }
 
     @Override
@@ -142,7 +155,6 @@ public class SerialPortReader implements SerialPortEventListener {
     }
 
     private void processSegment1(GeneratorData generatorData, byte[] buffer) {
-
         generatorData.setG_Ua(twoBytesToShort(buffer, 3));
         generatorData.setG_Ub(twoBytesToShort(buffer, 5));
         generatorData.setG_Uc(twoBytesToShort(buffer, 7));
@@ -237,7 +249,7 @@ public class SerialPortReader implements SerialPortEventListener {
      * @return
      */
     private Short twoBytesToShort(byte[] buffer, int startIndex) {
-        return new Short((short)((buffer[startIndex] << 8) + (buffer[startIndex + 1] & 0x00FF)));
+        return new Short((short) ((buffer[startIndex] << 8) + (buffer[startIndex + 1] & 0x00FF)));
     }
 
     private void updateLookup() {
@@ -286,5 +298,38 @@ public class SerialPortReader implements SerialPortEventListener {
         }
 
         return ret;
+    }
+
+    private class FakeGeneratorDataTask extends TimerTask {
+
+        private Generator fakeGenerator1;
+        private Generator fakeGenerator2;
+        private Generator fakeGenerator3;
+        List<Generator> m_pGeneratorList;
+        private int tmpCounter = 0;
+
+        public FakeGeneratorDataTask() {
+            m_pGeneratorList = new LinkedList<Generator>();
+            fakeGenerator1 = new Generator((byte) ModbusConstants.GENERATOR_1_MODBUS_ADDRESS);
+            fakeGenerator2 = new Generator((byte) ModbusConstants.GENERATOR_2_MODBUS_ADDRESS);
+            fakeGenerator3 = new Generator((byte) ModbusConstants.GENERATOR_3_MODBUS_ADDRESS);
+            m_pGeneratorList.add(fakeGenerator1);
+            m_pGeneratorList.add(fakeGenerator2);
+            m_pGeneratorList.add(fakeGenerator3);
+        }
+
+        @Override
+        public void run() {
+            System.out.println("FakeGeneratorDataTask run...");
+            m_pInstanceContent.set(Collections.emptyList(), null);
+            GeneratorData tmpGeneratorData = new GeneratorData(m_pGeneratorList.get(tmpCounter));
+            tmpGeneratorData.setRandomValues();
+            m_pInstanceContent.add(tmpGeneratorData);
+            
+            tmpCounter ++;
+            if (tmpCounter >= ModbusConstants.NUM_OF_GENERATORS) {
+                tmpCounter = 0;
+            }
+        }
     }
 }

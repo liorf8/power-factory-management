@@ -13,7 +13,7 @@ public class ModbusConstants {
     /**
      * The number of generators in the factory
      */
-    public static final int NUM_OF_GENERATORS = 1;
+    public static final int NUM_OF_GENERATORS = 3;
     /**
      * The Modbus address of the Master board.
      */

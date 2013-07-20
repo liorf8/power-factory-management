@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+OpenIDE-Module: com.factory.sure.data
+OpenIDE-Module-Localizing-Bundle: com/factory/sure/data/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
