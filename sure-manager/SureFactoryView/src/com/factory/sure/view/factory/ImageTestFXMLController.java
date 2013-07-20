@@ -4,7 +4,7 @@
  */
 package com.factory.sure.view.factory;
 
-import com.factory.sure.comport.data.GeneratorData;
+import com.factory.sure.data.pojos.GeneratorData;
 import com.factory.sure.comport.helper.constants.ModbusConstants;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -77,7 +77,7 @@ public class ImageTestFXMLController implements Initializable {
         L_Uab_Label_Val.setText(generatorData.getL_Uab().toString());
         L_Ubc_Label_Val.setText(generatorData.getL_Ubc().toString());
         L_Uca_Label_Val.setText(generatorData.getL_Uca().toString());
-        switch (generatorData.getModbusAddress()) {
+        switch (generatorData.getGenerator().getModbusAddress()) {
             case ModbusConstants.GENERATOR_1_MODBUS_ADDRESS:
                 G1_Uab_Label_Val.setText(generatorData.getG_Uab().toString());
                 G1_Ubc_Label_Val.setText(generatorData.getG_Ubc().toString());
