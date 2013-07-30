@@ -14,8 +14,6 @@ import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 import org.hibernate.SessionFactory;
 import org.openide.util.lookup.ServiceProvider;
 

@@ -3,33 +3,9 @@
     <type>org.netbeans.modules.apisupport.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/nb-module-project/3">
-            <code-name-base>com.factory.sure.view.factory</code-name-base>
+            <code-name-base>com.factory.sure.chart</code-name-base>
             <suite-component/>
             <module-dependencies>
-                <dependency>
-                    <code-name-base>com.factory.sure.chart</code-name-base>
-                    <build-prerequisite/>
-                    <compile-dependency/>
-                    <run-dependency>
-                        <specification-version>1.0</specification-version>
-                    </run-dependency>
-                </dependency>
-                <dependency>
-                    <code-name-base>com.factory.sure.comport</code-name-base>
-                    <build-prerequisite/>
-                    <compile-dependency/>
-                    <run-dependency>
-                        <specification-version>1.0</specification-version>
-                    </run-dependency>
-                </dependency>
-                <dependency>
-                    <code-name-base>com.factory.sure.data</code-name-base>
-                    <build-prerequisite/>
-                    <compile-dependency/>
-                    <run-dependency>
-                        <specification-version>1.0</specification-version>
-                    </run-dependency>
-                </dependency>
                 <dependency>
                     <code-name-base>javafx</code-name-base>
                     <build-prerequisite/>
@@ -44,7 +20,7 @@
                     <compile-dependency/>
                     <run-dependency>
                         <release-version>1</release-version>
-                        <specification-version>1.38.1</specification-version>
+                        <specification-version>1.38.2</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
@@ -60,7 +36,7 @@
                     <build-prerequisite/>
                     <compile-dependency/>
                     <run-dependency>
-                        <specification-version>8.29.2</specification-version>
+                        <specification-version>8.29.3</specification-version>
                     </run-dependency>
                 </dependency>
                 <dependency>
@@ -80,7 +56,10 @@
                     </run-dependency>
                 </dependency>
             </module-dependencies>
-            <public-packages/>
+            <public-packages>
+                <package>com.factory.sure.chart</package>
+                <package>com.factory.sure.chart.exception</package>
+            </public-packages>
         </data>
     </configuration>
 </project>

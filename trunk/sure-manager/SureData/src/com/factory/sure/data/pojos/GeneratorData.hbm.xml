@@ -12,187 +12,187 @@
         <many-to-one name="generator" class="com.factory.sure.data.pojos.Generator" fetch="select" lazy="false">
             <column name="generator_id" not-null="true" />
         </many-to-one>
-        <property name="G_Ua" type="java.lang.Short">
+        <property name="G_Ua" type="java.lang.Float">
             <column name="G_Ua" not-null="true" />
         </property>
-        <property name="G_Ub" type="java.lang.Short">
+        <property name="G_Ub" type="java.lang.Float">
             <column name="G_Ub" not-null="true" />
         </property>
-        <property name="G_Uc" type="java.lang.Short">
+        <property name="G_Uc" type="java.lang.Float">
             <column name="G_Uc" not-null="true" />
         </property>
-        <property name="G_Uab" type="java.lang.Short">
+        <property name="G_Uab" type="java.lang.Float">
             <column name="G_Uab" not-null="true" />
         </property>
-        <property name="G_Ubc" type="java.lang.Short">
+        <property name="G_Ubc" type="java.lang.Float">
             <column name="G_Ubc" not-null="true" />
         </property>
-        <property name="G_Uca" type="java.lang.Short">
+        <property name="G_Uca" type="java.lang.Float">
             <column name="G_Uca" not-null="true" />
         </property>
-        <property name="L_Ua" type="java.lang.Short">
+        <property name="L_Ua" type="java.lang.Float">
             <column name="L_Ua" not-null="true" />
         </property>
-        <property name="L_Ub" type="java.lang.Short">
+        <property name="L_Ub" type="java.lang.Float">
             <column name="L_Ub" not-null="true" />
         </property>
-        <property name="L_Uc" type="java.lang.Short">
+        <property name="L_Uc" type="java.lang.Float">
             <column name="L_Uc" not-null="true" />
         </property>
-        <property name="L_Uab" type="java.lang.Short">
+        <property name="L_Uab" type="java.lang.Float">
             <column name="L_Uab" not-null="true" />
         </property>
-        <property name="L_Ubc" type="java.lang.Short">
+        <property name="L_Ubc" type="java.lang.Float">
             <column name="L_Ubc" not-null="true" />
         </property>
-        <property name="L_Uca" type="java.lang.Short">
+        <property name="L_Uca" type="java.lang.Float">
             <column name="L_Uca" not-null="true" />
         </property>
-        <property name="Ia" type="java.lang.Short">
+        <property name="Ia" type="java.lang.Float">
             <column name="Ia" not-null="true" />
         </property>
-        <property name="Ib" type="java.lang.Short">
+        <property name="Ib" type="java.lang.Float">
             <column name="Ib" not-null="true" />
         </property>
-        <property name="Ic" type="java.lang.Short">
+        <property name="Ic" type="java.lang.Float">
             <column name="Ic" not-null="true" />
         </property>
-        <property name="Pa" type="java.lang.Short">
+        <property name="Pa" type="java.lang.Float">
             <column name="Pa" not-null="true" />
         </property>
-        <property name="Pb" type="java.lang.Short">
+        <property name="Pb" type="java.lang.Float">
             <column name="Pb" not-null="true" />
         </property>
-        <property name="Pc" type="java.lang.Short">
+        <property name="Pc" type="java.lang.Float">
             <column name="Pc" not-null="true" />
         </property>
-        <property name="Qa" type="java.lang.Short">
+        <property name="Qa" type="java.lang.Float">
             <column name="Qa" not-null="true" />
         </property>
-        <property name="Qb" type="java.lang.Short">
+        <property name="Qb" type="java.lang.Float">
             <column name="Qb" not-null="true" />
         </property>
-        <property name="Qc" type="java.lang.Short">
+        <property name="Qc" type="java.lang.Float">
             <column name="Qc" not-null="true" />
         </property>
-        <property name="Sa" type="java.lang.Short">
+        <property name="Sa" type="java.lang.Float">
             <column name="Sa" not-null="true" />
         </property>
-        <property name="Sb" type="java.lang.Short">
+        <property name="Sb" type="java.lang.Float">
             <column name="Sb" not-null="true" />
         </property>
-        <property name="Sc" type="java.lang.Short">
+        <property name="Sc" type="java.lang.Float">
             <column name="Sc" not-null="true" />
         </property>
-        <property name="PFa" type="java.lang.Short">
+        <property name="PFa" type="java.lang.Float">
             <column name="PFa" not-null="true" />
         </property>
-        <property name="PFb" type="java.lang.Short">
+        <property name="PFb" type="java.lang.Float">
             <column name="PFb" not-null="true" />
         </property>
-        <property name="PFc" type="java.lang.Short">
+        <property name="PFc" type="java.lang.Float">
             <column name="PFc" not-null="true" />
         </property>
-        <property name="P3Phases" type="java.lang.Short">
+        <property name="P3Phases" type="java.lang.Float">
             <column name="P3Phases" not-null="true" />
         </property>
-        <property name="Q3Phases" type="java.lang.Short">
+        <property name="Q3Phases" type="java.lang.Float">
             <column name="Q3Phases" not-null="true" />
         </property>
-        <property name="S3Phases" type="java.lang.Short">
+        <property name="S3Phases" type="java.lang.Float">
             <column name="S3Phases" not-null="true" />
         </property>
-        <property name="PF3Phases" type="java.lang.Short">
+        <property name="PF3Phases" type="java.lang.Float">
             <column name="PF3Phases" not-null="true" />
         </property>
-        <property name="G_RealFreq" type="java.lang.Short">
+        <property name="G_RealFreq" type="java.lang.Float">
             <column name="G_RealFreq" not-null="true" />
         </property>
-        <property name="L_RealFreq" type="java.lang.Short">
+        <property name="L_RealFreq" type="java.lang.Float">
             <column name="L_RealFreq" not-null="true" />
         </property>
-        <property name="I0" type="java.lang.Short">
+        <property name="I0" type="java.lang.Float">
             <column name="I0" not-null="true" />
         </property>
-        <property name="PowerEnergy" type="java.lang.Short">
+        <property name="PowerEnergy" type="java.lang.Float">
             <column name="PowerEnergy" not-null="true" />
         </property>
-        <property name="SpeedGuardStatus" type="java.lang.Short">
+        <property name="SpeedGuardStatus" type="java.lang.Float">
             <column name="SpeedGuardStatus" not-null="true" />
         </property>
-        <property name="RPM" type="java.lang.Short">
+        <property name="RPM" type="java.lang.Float">
             <column name="RPM" not-null="true" />
         </property>
-        <property name="Temperature1" type="java.lang.Short">
+        <property name="Temperature1" type="java.lang.Float">
             <column name="Temperature1" not-null="true" />
         </property>
-        <property name="Temperature2" type="java.lang.Short">
+        <property name="Temperature2" type="java.lang.Float">
             <column name="Temperature2" not-null="true" />
         </property>
-        <property name="Temperature3" type="java.lang.Short">
+        <property name="Temperature3" type="java.lang.Float">
             <column name="Temperature3" not-null="true" />
         </property>
-        <property name="Temperature4" type="java.lang.Short">
+        <property name="Temperature4" type="java.lang.Float">
             <column name="Temperature4" not-null="true" />
         </property>
-        <property name="Temperature5" type="java.lang.Short">
+        <property name="Temperature5" type="java.lang.Float">
             <column name="Temperature5" not-null="true" />
         </property>
-        <property name="Temperature6" type="java.lang.Short">
+        <property name="Temperature6" type="java.lang.Float">
             <column name="Temperature6" not-null="true" />
         </property>
-        <property name="Temperature7" type="java.lang.Short">
+        <property name="Temperature7" type="java.lang.Float">
             <column name="Temperature7" not-null="true" />
         </property>
-        <property name="Temperature8" type="java.lang.Short">
+        <property name="Temperature8" type="java.lang.Float">
             <column name="Temperature8" not-null="true" />
         </property>
-        <property name="Temperature9" type="java.lang.Short">
+        <property name="Temperature9" type="java.lang.Float">
             <column name="Temperature9" not-null="true" />
         </property>
-        <property name="Temperature10" type="java.lang.Short">
+        <property name="Temperature10" type="java.lang.Float">
             <column name="Temperature10" not-null="true" />
         </property>
-        <property name="Temperature11" type="java.lang.Short">
+        <property name="Temperature11" type="java.lang.Float">
             <column name="Temperature11" not-null="true" />
         </property>
-        <property name="Temperature12" type="java.lang.Short">
+        <property name="Temperature12" type="java.lang.Float">
             <column name="Temperature12" not-null="true" />
         </property>
-        <property name="Press1" type="java.lang.Short">
+        <property name="Press1" type="java.lang.Float">
             <column name="Press1" not-null="true" />
         </property>
-        <property name="Press2" type="java.lang.Short">
+        <property name="Press2" type="java.lang.Float">
             <column name="Press2" not-null="true" />
         </property>
-        <property name="Press3" type="java.lang.Short">
+        <property name="Press3" type="java.lang.Float">
             <column name="Press3" not-null="true" />
         </property>
-        <property name="Press4" type="java.lang.Short">
+        <property name="Press4" type="java.lang.Float">
             <column name="Press4" not-null="true" />
         </property>
-        <property name="ContactGroup1" type="java.lang.Short">
+        <property name="ContactGroup1" type="java.lang.Float">
             <column name="ContactGroup1" not-null="true" />
         </property>
-        <property name="ContactGroup2" type="java.lang.Short">
+        <property name="ContactGroup2" type="java.lang.Float">
             <column name="ContactGroup2" not-null="true" />
         </property>
-        <property name="ContactGroup3" type="java.lang.Short">
+        <property name="ContactGroup3" type="java.lang.Float">
             <column name="ContactGroup3" not-null="true" />
         </property>
-        <property name="ContactGroup4" type="java.lang.Short">
+        <property name="ContactGroup4" type="java.lang.Float">
             <column name="ContactGroup4" not-null="true" />
         </property>
-        <property name="WaterOpenAngle" type="java.lang.Short">
+        <property name="WaterOpenAngle" type="java.lang.Float">
             <column name="WaterOpenAngle" not-null="true" />
         </property>
-        <property name="FuelLevel1" type="java.lang.Short">
+        <property name="FuelLevel1" type="java.lang.Float">
             <column name="FuelLevel1" not-null="true" />
         </property>
-        <property name="FuelLevel2" type="java.lang.Short">
+        <property name="FuelLevel2" type="java.lang.Float">
             <column name="FuelLevel2" not-null="true" />
         </property>
-        <property name="ValvePlace" type="java.lang.Short">
+        <property name="ValvePlace" type="java.lang.Float">
             <column name="ValvePlace" not-null="true" />
         </property>
     </class>
