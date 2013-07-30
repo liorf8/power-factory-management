@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.chart-series-line {    
+    -fx-stroke-width: 2px;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #ffff66; }
+.default-color1.chart-series-line { -fx-stroke: #ff3333; }
+.default-color2.chart-series-line { -fx-stroke: #3333ff; }

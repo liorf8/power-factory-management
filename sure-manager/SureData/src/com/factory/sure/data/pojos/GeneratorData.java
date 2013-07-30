@@ -10,67 +10,67 @@ public class GeneratorData implements java.io.Serializable {
     private Integer id;
     private Date timeStamp;
     private Generator m_pGenerator;
-    private Short mG_Ua;
-    private Short mG_Ub;
-    private Short mG_Uc;
-    private Short mG_Uab;
-    private Short mG_Ubc;
-    private Short mG_Uca;
-    private Short mL_Ua;
-    private Short mL_Ub;
-    private Short mL_Uc;
-    private Short mL_Uab;
-    private Short mL_Ubc;
-    private Short mL_Uca;
-    private Short mIa;
-    private Short mIb;
-    private Short mIc;
-    private Short mPa;
-    private Short mPb;
-    private Short mPc;
-    private Short mQa;
-    private Short mQb;
-    private Short mQc;
-    private Short mSa;
-    private Short mSb;
-    private Short mSc;
-    private Short mPFa;
-    private Short mPFb;
-    private Short mPFc;
-    private Short mP3Phases;
-    private Short mQ3Phases;
-    private Short mS3Phases;
-    private Short mPF3Phases;
-    private Short mG_RealFreq;
-    private Short mL_RealFreq;
-    private Short mI0;
-    private Short mPowerEnergy;
-    private Short mSpeedGuardStatus;
-    private Short mRPM;
-    private Short mTemperature1;
-    private Short mTemperature2;
-    private Short mTemperature3;
-    private Short mTemperature4;
-    private Short mTemperature5;
-    private Short mTemperature6;
-    private Short mTemperature7;
-    private Short mTemperature8;
-    private Short mTemperature9;
-    private Short mTemperature10;
-    private Short mTemperature11;
-    private Short mTemperature12;
-    private Short mPress1;
-    private Short mPress2;
-    private Short mPress3;
-    private Short mPress4;
-    private Short mContactGroup1;
-    private Short mContactGroup2;
-    private Short mContactGroup3;
-    private Short mContactGroup4;
-    private Short mWaterOpenAngle;
-    private Short mFuelLevel1;
-    private Short mFuelLevel2;
-    private Short mValvePlace;
+    private Float mG_Ua;
+    private Float mG_Ub;
+    private Float mG_Uc;
+    private Float mG_Uab;
+    private Float mG_Ubc;
+    private Float mG_Uca;
+    private Float mL_Ua;
+    private Float mL_Ub;
+    private Float mL_Uc;
+    private Float mL_Uab;
+    private Float mL_Ubc;
+    private Float mL_Uca;
+    private Float mIa;
+    private Float mIb;
+    private Float mIc;
+    private Float mPa;
+    private Float mPb;
+    private Float mPc;
+    private Float mQa;
+    private Float mQb;
+    private Float mQc;
+    private Float mSa;
+    private Float mSb;
+    private Float mSc;
+    private Float mPFa;
+    private Float mPFb;
+    private Float mPFc;
+    private Float mP3Phases;
+    private Float mQ3Phases;
+    private Float mS3Phases;
+    private Float mPF3Phases;
+    private Float mG_RealFreq;
+    private Float mL_RealFreq;
+    private Float mI0;
+    private Float mPowerEnergy;
+    private Float mSpeedGuardStatus;
+    private Float mRPM;
+    private Float mTemperature1;
+    private Float mTemperature2;
+    private Float mTemperature3;
+    private Float mTemperature4;
+    private Float mTemperature5;
+    private Float mTemperature6;
+    private Float mTemperature7;
+    private Float mTemperature8;
+    private Float mTemperature9;
+    private Float mTemperature10;
+    private Float mTemperature11;
+    private Float mTemperature12;
+    private Float mPress1;
+    private Float mPress2;
+    private Float mPress3;
+    private Float mPress4;
+    private Float mContactGroup1;
+    private Float mContactGroup2;
+    private Float mContactGroup3;
+    private Float mContactGroup4;
+    private Float mWaterOpenAngle;
+    private Float mFuelLevel1;
+    private Float mFuelLevel2;
+    private Float mValvePlace;
     
     public GeneratorData() {        
     }
@@ -80,7 +80,7 @@ public class GeneratorData implements java.io.Serializable {
         resetAllValues();
     }
 
-    public GeneratorData(Generator generator, Short GUa, Short GUb, Short GUc, Short GUab, Short GUbc, Short GUca, Short LUa, Short LUb, Short LUc, Short LUab, Short LUbc, Short LUca, Short ia, Short ib, Short ic, Short pa, Short pb, Short pc, Short qa, Short qb, Short qc, Short sa, Short sb, Short sc, Short pfa, Short pfb, Short pfc, Short p3phases, Short q3phases, Short s3phases, Short pf3phases, Short GRealFreq, Short LRealFreq, Short i0, Short powerEnergy, Short speedGuardStatus, Short rpm, Short temperature1, Short temperature2, Short temperature3, Short temperature4, Short temperature5, Short temperature6, Short temperature7, Short temperature8, Short temperature9, Short temperature10, Short temperature11, Short temperature12, Short press1, Short press2, Short press3, Short press4, Short contactGroup1, Short contactGroup2, Short contactGroup3, Short contactGroup4, Short waterOpenAngle, Short fuelLevel1, Short fuelLevel2, Short valvePlace) {
+    public GeneratorData(Generator generator, Float GUa, Float GUb, Float GUc, Float GUab, Float GUbc, Float GUca, Float LUa, Float LUb, Float LUc, Float LUab, Float LUbc, Float LUca, Float ia, Float ib, Float ic, Float pa, Float pb, Float pc, Float qa, Float qb, Float qc, Float sa, Float sb, Float sc, Float pfa, Float pfb, Float pfc, Float p3phases, Float q3phases, Float s3phases, Float pf3phases, Float GRealFreq, Float LRealFreq, Float i0, Float powerEnergy, Float speedGuardStatus, Float rpm, Float temperature1, Float temperature2, Float temperature3, Float temperature4, Float temperature5, Float temperature6, Float temperature7, Float temperature8, Float temperature9, Float temperature10, Float temperature11, Float temperature12, Float press1, Float press2, Float press3, Float press4, Float contactGroup1, Float contactGroup2, Float contactGroup3, Float contactGroup4, Float waterOpenAngle, Float fuelLevel1, Float fuelLevel2, Float valvePlace) {
         this.m_pGenerator = generator;
         this.mG_Ua = GUa;
         this.mG_Ub = GUb;
@@ -169,491 +169,491 @@ public class GeneratorData implements java.io.Serializable {
         this.m_pGenerator = generator;
     }
 
-    public Short getG_Ua() {
+    public Float getG_Ua() {
         return this.mG_Ua;
     }
 
-    public void setG_Ua(Short GUa) {
+    public void setG_Ua(Float GUa) {
         this.mG_Ua = GUa;
     }
 
-    public Short getG_Ub() {
+    public Float getG_Ub() {
         return this.mG_Ub;
     }
 
-    public void setG_Ub(Short GUb) {
+    public void setG_Ub(Float GUb) {
         this.mG_Ub = GUb;
     }
 
-    public Short getG_Uc() {
+    public Float getG_Uc() {
         return this.mG_Uc;
     }
 
-    public void setG_Uc(Short GUc) {
+    public void setG_Uc(Float GUc) {
         this.mG_Uc = GUc;
     }
 
-    public Short getG_Uab() {
+    public Float getG_Uab() {
         return this.mG_Uab;
     }
 
-    public void setG_Uab(Short GUab) {
+    public void setG_Uab(Float GUab) {
         this.mG_Uab = GUab;
     }
 
-    public Short getG_Ubc() {
+    public Float getG_Ubc() {
         return this.mG_Ubc;
     }
 
-    public void setG_Ubc(Short GUbc) {
+    public void setG_Ubc(Float GUbc) {
         this.mG_Ubc = GUbc;
     }
 
-    public Short getG_Uca() {
+    public Float getG_Uca() {
         return this.mG_Uca;
     }
 
-    public void setG_Uca(Short GUca) {
+    public void setG_Uca(Float GUca) {
         this.mG_Uca = GUca;
     }
 
-    public Short getL_Ua() {
+    public Float getL_Ua() {
         return this.mL_Ua;
     }
 
-    public void setL_Ua(Short LUa) {
+    public void setL_Ua(Float LUa) {
         this.mL_Ua = LUa;
     }
 
-    public Short getL_Ub() {
+    public Float getL_Ub() {
         return this.mL_Ub;
     }
 
-    public void setL_Ub(Short LUb) {
+    public void setL_Ub(Float LUb) {
         this.mL_Ub = LUb;
     }
 
-    public Short getL_Uc() {
+    public Float getL_Uc() {
         return this.mL_Uc;
     }
 
-    public void setL_Uc(Short LUc) {
+    public void setL_Uc(Float LUc) {
         this.mL_Uc = LUc;
     }
 
-    public Short getL_Uab() {
+    public Float getL_Uab() {
         return this.mL_Uab;
     }
 
-    public void setL_Uab(Short LUab) {
+    public void setL_Uab(Float LUab) {
         this.mL_Uab = LUab;
     }
 
-    public Short getL_Ubc() {
+    public Float getL_Ubc() {
         return this.mL_Ubc;
     }
 
-    public void setL_Ubc(Short LUbc) {
+    public void setL_Ubc(Float LUbc) {
         this.mL_Ubc = LUbc;
     }
 
-    public Short getL_Uca() {
+    public Float getL_Uca() {
         return this.mL_Uca;
     }
 
-    public void setL_Uca(Short LUca) {
+    public void setL_Uca(Float LUca) {
         this.mL_Uca = LUca;
     }
 
-    public Short getIa() {
+    public Float getIa() {
         return this.mIa;
     }
 
-    public void setIa(Short ia) {
+    public void setIa(Float ia) {
         this.mIa = ia;
     }
 
-    public Short getIb() {
+    public Float getIb() {
         return this.mIb;
     }
 
-    public void setIb(Short ib) {
+    public void setIb(Float ib) {
         this.mIb = ib;
     }
 
-    public Short getIc() {
+    public Float getIc() {
         return this.mIc;
     }
 
-    public void setIc(Short ic) {
+    public void setIc(Float ic) {
         this.mIc = ic;
     }
 
-    public Short getPa() {
+    public Float getPa() {
         return this.mPa;
     }
 
-    public void setPa(Short pa) {
+    public void setPa(Float pa) {
         this.mPa = pa;
     }
 
-    public Short getPb() {
+    public Float getPb() {
         return this.mPb;
     }
 
-    public void setPb(Short pb) {
+    public void setPb(Float pb) {
         this.mPb = pb;
     }
 
-    public Short getPc() {
+    public Float getPc() {
         return this.mPc;
     }
 
-    public void setPc(Short pc) {
+    public void setPc(Float pc) {
         this.mPc = pc;
     }
 
-    public Short getQa() {
+    public Float getQa() {
         return this.mQa;
     }
 
-    public void setQa(Short qa) {
+    public void setQa(Float qa) {
         this.mQa = qa;
     }
 
-    public Short getQb() {
+    public Float getQb() {
         return this.mQb;
     }
 
-    public void setQb(Short qb) {
+    public void setQb(Float qb) {
         this.mQb = qb;
     }
 
-    public Short getQc() {
+    public Float getQc() {
         return this.mQc;
     }
 
-    public void setQc(Short qc) {
+    public void setQc(Float qc) {
         this.mQc = qc;
     }
 
-    public Short getSa() {
+    public Float getSa() {
         return this.mSa;
     }
 
-    public void setSa(Short sa) {
+    public void setSa(Float sa) {
         this.mSa = sa;
     }
 
-    public Short getSb() {
+    public Float getSb() {
         return this.mSb;
     }
 
-    public void setSb(Short sb) {
+    public void setSb(Float sb) {
         this.mSb = sb;
     }
 
-    public Short getSc() {
+    public Float getSc() {
         return this.mSc;
     }
 
-    public void setSc(Short sc) {
+    public void setSc(Float sc) {
         this.mSc = sc;
     }
 
-    public Short getPFa() {
+    public Float getPFa() {
         return this.mPFa;
     }
 
-    public void setPFa(Short pfa) {
+    public void setPFa(Float pfa) {
         this.mPFa = pfa;
     }
 
-    public Short getPFb() {
+    public Float getPFb() {
         return this.mPFb;
     }
 
-    public void setPFb(Short pfb) {
+    public void setPFb(Float pfb) {
         this.mPFb = pfb;
     }
 
-    public Short getPFc() {
+    public Float getPFc() {
         return this.mPFc;
     }
 
-    public void setPFc(Short pfc) {
+    public void setPFc(Float pfc) {
         this.mPFc = pfc;
     }
 
-    public Short getP3Phases() {
+    public Float getP3Phases() {
         return this.mP3Phases;
     }
 
-    public void setP3Phases(Short p3phases) {
+    public void setP3Phases(Float p3phases) {
         this.mP3Phases = p3phases;
     }
 
-    public Short getQ3Phases() {
+    public Float getQ3Phases() {
         return this.mQ3Phases;
     }
 
-    public void setQ3Phases(Short q3phases) {
+    public void setQ3Phases(Float q3phases) {
         this.mQ3Phases = q3phases;
     }
 
-    public Short getS3Phases() {
+    public Float getS3Phases() {
         return this.mS3Phases;
     }
 
-    public void setS3Phases(Short s3phases) {
+    public void setS3Phases(Float s3phases) {
         this.mS3Phases = s3phases;
     }
 
-    public Short getPF3Phases() {
+    public Float getPF3Phases() {
         return this.mPF3Phases;
     }
 
-    public void setPF3Phases(Short pf3phases) {
+    public void setPF3Phases(Float pf3phases) {
         this.mPF3Phases = pf3phases;
     }
 
-    public Short getG_RealFreq() {
+    public Float getG_RealFreq() {
         return this.mG_RealFreq;
     }
 
-    public void setG_RealFreq(Short GRealFreq) {
+    public void setG_RealFreq(Float GRealFreq) {
         this.mG_RealFreq = GRealFreq;
     }
 
-    public Short getL_RealFreq() {
+    public Float getL_RealFreq() {
         return this.mL_RealFreq;
     }
 
-    public void setL_RealFreq(Short LRealFreq) {
+    public void setL_RealFreq(Float LRealFreq) {
         this.mL_RealFreq = LRealFreq;
     }
 
-    public Short getI0() {
+    public Float getI0() {
         return this.mI0;
     }
 
-    public void setI0(Short i0) {
+    public void setI0(Float i0) {
         this.mI0 = i0;
     }
 
-    public Short getPowerEnergy() {
+    public Float getPowerEnergy() {
         return this.mPowerEnergy;
     }
 
-    public void setPowerEnergy(Short powerEnergy) {
+    public void setPowerEnergy(Float powerEnergy) {
         this.mPowerEnergy = powerEnergy;
     }
 
-    public Short getSpeedGuardStatus() {
+    public Float getSpeedGuardStatus() {
         return this.mSpeedGuardStatus;
     }
 
-    public void setSpeedGuardStatus(Short speedGuardStatus) {
+    public void setSpeedGuardStatus(Float speedGuardStatus) {
         this.mSpeedGuardStatus = speedGuardStatus;
     }
 
-    public Short getRPM() {
+    public Float getRPM() {
         return this.mRPM;
     }
 
-    public void setRPM(Short rpm) {
+    public void setRPM(Float rpm) {
         this.mRPM = rpm;
     }
 
-    public Short getTemperature1() {
+    public Float getTemperature1() {
         return this.mTemperature1;
     }
 
-    public void setTemperature1(Short temperature1) {
+    public void setTemperature1(Float temperature1) {
         this.mTemperature1 = temperature1;
     }
 
-    public Short getTemperature2() {
+    public Float getTemperature2() {
         return this.mTemperature2;
     }
 
-    public void setTemperature2(Short temperature2) {
+    public void setTemperature2(Float temperature2) {
         this.mTemperature2 = temperature2;
     }
 
-    public Short getTemperature3() {
+    public Float getTemperature3() {
         return this.mTemperature3;
     }
 
-    public void setTemperature3(Short temperature3) {
+    public void setTemperature3(Float temperature3) {
         this.mTemperature3 = temperature3;
     }
 
-    public Short getTemperature4() {
+    public Float getTemperature4() {
         return this.mTemperature4;
     }
 
-    public void setTemperature4(Short temperature4) {
+    public void setTemperature4(Float temperature4) {
         this.mTemperature4 = temperature4;
     }
 
-    public Short getTemperature5() {
+    public Float getTemperature5() {
         return this.mTemperature5;
     }
 
-    public void setTemperature5(Short temperature5) {
+    public void setTemperature5(Float temperature5) {
         this.mTemperature5 = temperature5;
     }
 
-    public Short getTemperature6() {
+    public Float getTemperature6() {
         return this.mTemperature6;
     }
 
-    public void setTemperature6(Short temperature6) {
+    public void setTemperature6(Float temperature6) {
         this.mTemperature6 = temperature6;
     }
 
-    public Short getTemperature7() {
+    public Float getTemperature7() {
         return this.mTemperature7;
     }
 
-    public void setTemperature7(Short temperature7) {
+    public void setTemperature7(Float temperature7) {
         this.mTemperature7 = temperature7;
     }
 
-    public Short getTemperature8() {
+    public Float getTemperature8() {
         return this.mTemperature8;
     }
 
-    public void setTemperature8(Short temperature8) {
+    public void setTemperature8(Float temperature8) {
         this.mTemperature8 = temperature8;
     }
 
-    public Short getTemperature9() {
+    public Float getTemperature9() {
         return this.mTemperature9;
     }
 
-    public void setTemperature9(Short temperature9) {
+    public void setTemperature9(Float temperature9) {
         this.mTemperature9 = temperature9;
     }
 
-    public Short getTemperature10() {
+    public Float getTemperature10() {
         return this.mTemperature10;
     }
 
-    public void setTemperature10(Short temperature10) {
+    public void setTemperature10(Float temperature10) {
         this.mTemperature10 = temperature10;
     }
 
-    public Short getTemperature11() {
+    public Float getTemperature11() {
         return this.mTemperature11;
     }
 
-    public void setTemperature11(Short temperature11) {
+    public void setTemperature11(Float temperature11) {
         this.mTemperature11 = temperature11;
     }
 
-    public Short getTemperature12() {
+    public Float getTemperature12() {
         return this.mTemperature12;
     }
 
-    public void setTemperature12(Short temperature12) {
+    public void setTemperature12(Float temperature12) {
         this.mTemperature12 = temperature12;
     }
 
-    public Short getPress1() {
+    public Float getPress1() {
         return this.mPress1;
     }
 
-    public void setPress1(Short press1) {
+    public void setPress1(Float press1) {
         this.mPress1 = press1;
     }
 
-    public Short getPress2() {
+    public Float getPress2() {
         return this.mPress2;
     }
 
-    public void setPress2(Short press2) {
+    public void setPress2(Float press2) {
         this.mPress2 = press2;
     }
 
-    public Short getPress3() {
+    public Float getPress3() {
         return this.mPress3;
     }
 
-    public void setPress3(Short press3) {
+    public void setPress3(Float press3) {
         this.mPress3 = press3;
     }
 
-    public Short getPress4() {
+    public Float getPress4() {
         return this.mPress4;
     }
 
-    public void setPress4(Short press4) {
+    public void setPress4(Float press4) {
         this.mPress4 = press4;
     }
 
-    public Short getContactGroup1() {
+    public Float getContactGroup1() {
         return this.mContactGroup1;
     }
 
-    public void setContactGroup1(Short contactGroup1) {
+    public void setContactGroup1(Float contactGroup1) {
         this.mContactGroup1 = contactGroup1;
     }
 
-    public Short getContactGroup2() {
+    public Float getContactGroup2() {
         return this.mContactGroup2;
     }
 
-    public void setContactGroup2(Short contactGroup2) {
+    public void setContactGroup2(Float contactGroup2) {
         this.mContactGroup2 = contactGroup2;
     }
 
-    public Short getContactGroup3() {
+    public Float getContactGroup3() {
         return this.mContactGroup3;
     }
 
-    public void setContactGroup3(Short contactGroup3) {
+    public void setContactGroup3(Float contactGroup3) {
         this.mContactGroup3 = contactGroup3;
     }
 
-    public Short getContactGroup4() {
+    public Float getContactGroup4() {
         return this.mContactGroup4;
     }
 
-    public void setContactGroup4(Short contactGroup4) {
+    public void setContactGroup4(Float contactGroup4) {
         this.mContactGroup4 = contactGroup4;
     }
 
-    public Short getWaterOpenAngle() {
+    public Float getWaterOpenAngle() {
         return this.mWaterOpenAngle;
     }
 
-    public void setWaterOpenAngle(Short waterOpenAngle) {
+    public void setWaterOpenAngle(Float waterOpenAngle) {
         this.mWaterOpenAngle = waterOpenAngle;
     }
 
-    public Short getFuelLevel1() {
+    public Float getFuelLevel1() {
         return this.mFuelLevel1;
     }
 
-    public void setFuelLevel1(Short fuelLevel1) {
+    public void setFuelLevel1(Float fuelLevel1) {
         this.mFuelLevel1 = fuelLevel1;
     }
 
-    public Short getFuelLevel2() {
+    public Float getFuelLevel2() {
         return this.mFuelLevel2;
     }
 
-    public void setFuelLevel2(Short fuelLevel2) {
+    public void setFuelLevel2(Float fuelLevel2) {
         this.mFuelLevel2 = fuelLevel2;
     }
 
-    public Short getValvePlace() {
+    public Float getValvePlace() {
         return this.mValvePlace;
     }
 
-    public void setValvePlace(Short valvePlace) {
+    public void setValvePlace(Float valvePlace) {
         this.mValvePlace = valvePlace;
     }
 
@@ -752,83 +752,83 @@ public class GeneratorData implements java.io.Serializable {
     
     // TODO: delete this in the release version
     public void setRandomValues() {
-        this.setContactGroup1((short)(Math.random() * 1000));
-        this.setContactGroup2((short)(Math.random() * 1000));
-        this.setContactGroup3((short)(Math.random() * 1000));
-        this.setContactGroup4((short)(Math.random() * 1000));
+        this.setContactGroup1((float)(Math.random() * 1000));
+        this.setContactGroup2((float)(Math.random() * 1000));
+        this.setContactGroup3((float)(Math.random() * 1000));
+        this.setContactGroup4((float)(Math.random() * 1000));
 
-        this.setFuelLevel1((short)(Math.random() * 1000));
-        this.setFuelLevel2((short)(Math.random() * 1000));
+        this.setFuelLevel1((float)(Math.random() * 1000));
+        this.setFuelLevel2((float)(Math.random() * 1000));
 
-        this.setG_RealFreq((short)(Math.random() * 1000));
-        this.setL_RealFreq((short)(Math.random() * 1000));
+        this.setG_RealFreq((float)(Math.random() * 1000));
+        this.setL_RealFreq((float)(Math.random() * 1000));
 
-        this.setG_Ua((short)(Math.random() * 1000));
-        this.setG_Uab((short)(Math.random() * 1000));
-        this.setG_Ub((short)(Math.random() * 1000));
-        this.setG_Ubc((short)(Math.random() * 1000));
-        this.setG_Uc((short)(Math.random() * 1000));
-        this.setG_Uca((short)(Math.random() * 1000));
+        this.setG_Ua((float)(Math.random() * 1000));
+        this.setG_Uab((float)(Math.random() * 1000));
+        this.setG_Ub((float)(Math.random() * 1000));
+        this.setG_Ubc((float)(Math.random() * 1000));
+        this.setG_Uc((float)(Math.random() * 1000));
+        this.setG_Uca((float)(Math.random() * 1000));
 
-        this.setI0((short)(Math.random() * 1000));
-        this.setIa((short)(Math.random() * 1000));
-        this.setIb((short)(Math.random() * 1000));
-        this.setIc((short)(Math.random() * 1000));
+        this.setI0((float)(Math.random() * 1000));
+        this.setIa((float)(Math.random() * 1000));
+        this.setIb((float)(Math.random() * 1000));
+        this.setIc((float)(Math.random() * 1000));
 
-        this.setL_Ua((short)(Math.random() * 1000));
-        this.setL_Uab((short)(Math.random() * 1000));
-        this.setL_Ub((short)(Math.random() * 1000));
-        this.setL_Ubc((short)(Math.random() * 1000));
-        this.setL_Uc((short)(Math.random() * 1000));
-        this.setL_Uca((short)(Math.random() * 1000));
+        this.setL_Ua((float)(Math.random() * 1000));
+        this.setL_Uab((float)(Math.random() * 1000));
+        this.setL_Ub((float)(Math.random() * 1000));
+        this.setL_Ubc((float)(Math.random() * 1000));
+        this.setL_Uc((float)(Math.random() * 1000));
+        this.setL_Uca((float)(Math.random() * 1000));
 
-        this.setP3Phases((short)(Math.random() * 1000));
-        this.setPF3Phases((short)(Math.random() * 1000));
+        this.setP3Phases((float)(Math.random() * 1000));
+        this.setPF3Phases((float)(Math.random() * 1000));
 
-        this.setPFa((short)(Math.random() * 1000));
-        this.setPFb((short)(Math.random() * 1000));
-        this.setPFc((short)(Math.random() * 1000));
+        this.setPFa((float)(Math.random() * 1000));
+        this.setPFb((float)(Math.random() * 1000));
+        this.setPFc((float)(Math.random() * 1000));
 
-        this.setPa((short)(Math.random() * 1000));
-        this.setPb((short)(Math.random() * 1000));
-        this.setPc((short)(Math.random() * 1000));
+        this.setPa((float)(Math.random() * 1000));
+        this.setPb((float)(Math.random() * 1000));
+        this.setPc((float)(Math.random() * 1000));
 
-        this.setPowerEnergy((short)(Math.random() * 1000));
+        this.setPowerEnergy((float)(Math.random() * 1000));
 
-        this.setPress1((short)(Math.random() * 1000));
-        this.setPress2((short)(Math.random() * 1000));
-        this.setPress3((short)(Math.random() * 1000));
-        this.setPress4((short)(Math.random() * 1000));
+        this.setPress1((float)(Math.random() * 1000));
+        this.setPress2((float)(Math.random() * 1000));
+        this.setPress3((float)(Math.random() * 1000));
+        this.setPress4((float)(Math.random() * 1000));
 
-        this.setQ3Phases((short)(Math.random() * 1000));
+        this.setQ3Phases((float)(Math.random() * 1000));
 
-        this.setQa((short)(Math.random() * 1000));
-        this.setQb((short)(Math.random() * 1000));
-        this.setQc((short)(Math.random() * 1000));
+        this.setQa((float)(Math.random() * 1000));
+        this.setQb((float)(Math.random() * 1000));
+        this.setQc((float)(Math.random() * 1000));
 
-        this.setRPM((short)(Math.random() * 1000));
+        this.setRPM((float)(Math.random() * 1000));
 
-        this.setS3Phases((short)(Math.random() * 1000));
-        this.setSa((short)(Math.random() * 1000));
-        this.setSb((short)(Math.random() * 1000));
-        this.setSc((short)(Math.random() * 1000));
+        this.setS3Phases((float)(Math.random() * 1000));
+        this.setSa((float)(Math.random() * 1000));
+        this.setSb((float)(Math.random() * 1000));
+        this.setSc((float)(Math.random() * 1000));
 
-        this.setSpeedGuardStatus((short)(Math.random() * 1000));
+        this.setSpeedGuardStatus((float)(Math.random() * 1000));
 
-        this.setTemperature1((short)(Math.random() * 1000));
-        this.setTemperature2((short)(Math.random() * 1000));
-        this.setTemperature3((short)(Math.random() * 1000));
-        this.setTemperature4((short)(Math.random() * 1000));
-        this.setTemperature5((short)(Math.random() * 1000));
-        this.setTemperature6((short)(Math.random() * 1000));
-        this.setTemperature7((short)(Math.random() * 1000));
-        this.setTemperature8((short)(Math.random() * 1000));
-        this.setTemperature9((short)(Math.random() * 1000));
-        this.setTemperature10((short)(Math.random() * 1000));
-        this.setTemperature11((short)(Math.random() * 1000));
-        this.setTemperature12((short)(Math.random() * 1000));
+        this.setTemperature1((float)(Math.random() * 1000));
+        this.setTemperature2((float)(Math.random() * 1000));
+        this.setTemperature3((float)(Math.random() * 1000));
+        this.setTemperature4((float)(Math.random() * 1000));
+        this.setTemperature5((float)(Math.random() * 1000));
+        this.setTemperature6((float)(Math.random() * 1000));
+        this.setTemperature7((float)(Math.random() * 1000));
+        this.setTemperature8((float)(Math.random() * 1000));
+        this.setTemperature9((float)(Math.random() * 1000));
+        this.setTemperature10((float)(Math.random() * 1000));
+        this.setTemperature11((float)(Math.random() * 1000));
+        this.setTemperature12((float)(Math.random() * 1000));
 
-        this.setValvePlace((short)(Math.random() * 1000));
-        this.setWaterOpenAngle((short)(Math.random() * 1000));
+        this.setValvePlace((float)(Math.random() * 1000));
+        this.setWaterOpenAngle((float)(Math.random() * 1000));
     }
 }
