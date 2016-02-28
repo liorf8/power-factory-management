@@ -1,0 +1,1 @@
+Each power factory contains some generator and factory information that should be tracked automatically. This program is for monitoring a power factory.
